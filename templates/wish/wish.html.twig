@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block main %}
+
+{% for wish in list %}
+    <p>{{wish}}</p>
+    <a class="nav-link" href="{{ path('detail', {wish})}}">- detail -</a> 
+{% endfor %}
+
+{% endblock %}
